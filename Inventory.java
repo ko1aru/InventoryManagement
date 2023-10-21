@@ -9,10 +9,12 @@ class Inventory {
 
 class InventoryDao {
 	Connection con = null;
+	String username = "";
+	String password = "";
 	public InventoryDao() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "A@kash01");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", username, password);
 			con.setAutoCommit(true);
 		} catch (Exception e) {
 			e.printStackTrace();
