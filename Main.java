@@ -2,17 +2,7 @@ import java.util.*;
 import java.sql.*;
 
 public class Main {
-	public static void main(String[] args) {
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "A@kash01");
-			
-			Statement st = con.createStatement();
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
+	public static void main(String[] args) {		
 		Scanner sc = new Scanner(System.in);
 		boolean running = true;
 		
