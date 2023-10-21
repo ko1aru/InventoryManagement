@@ -88,6 +88,7 @@ public class Main {
 								System.out.print(" ");
 							}
 							System.out.print(searchedItem.quantity + "        ");
+							if(rs.getInt("quantity") < 10) System.out.print(" ");
 							System.out.print(searchedItem.price);
 						} else {
 							throw new NullPointerException();
