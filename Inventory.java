@@ -35,6 +35,7 @@ class InventoryDao {
 					System.out.print(" ");
 				}
 				System.out.print(rs.getInt("quantity") + "        ");
+				if(rs.getInt("quantity") < 10) System.out.print(" ");
 				System.out.print(rs.getDouble("price"));
 			}
 		} catch (Exception e) {
